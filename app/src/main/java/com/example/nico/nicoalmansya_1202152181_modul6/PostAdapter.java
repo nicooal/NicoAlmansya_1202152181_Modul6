@@ -3,8 +3,6 @@ package com.example.nico.nicoalmansya_1202152181_modul6;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,8 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>  {
@@ -23,7 +19,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>  {
     Context context;
     List<Post> postList;
 
-    public PostAdapter(Context context, ArrayList<Post> postList) {
+    public PostAdapter(Context context, List<Post> postList) {
         this.context = context;
         this.postList = postList;
     }

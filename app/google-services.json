@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "570695342394",
+    "firebase_url": "https://nico1202152181modul6.firebaseio.com",
+    "project_id": "nico1202152181modul6",
+    "storage_bucket": "nico1202152181modul6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570695342394:android:f623664c882125fd",
+        "android_client_info": {
+          "package_name": "com.example.nico.nicoalmansya_1202152181_modul6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570695342394-h3aasr4m8jjakivclrpif4fb72i0nkv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSCQcKJLUMBdPtArnNnvJp2l2pmQ_TbJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

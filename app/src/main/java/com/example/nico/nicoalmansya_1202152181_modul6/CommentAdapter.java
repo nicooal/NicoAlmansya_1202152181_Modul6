@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Comment;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,12 +55,6 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         holder.imageView.setImageResource(R.drawable.ic_account_circle_black_24dp);
 
     }
-//    private void setupImageRounded() {
-//        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.test);
-//        rounded = RoundedBitmapDrawableFactory.create(context.getResources(), bitmap);
-//        rounded.setCircular(true);
-//
-//    }
 
     @Override
     public int getItemCount() {

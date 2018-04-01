@@ -27,7 +27,7 @@ public class MyPost extends Fragment {
     Query databaseFood;
 
     @Override
-    protected void onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_my_post, container, false);
 

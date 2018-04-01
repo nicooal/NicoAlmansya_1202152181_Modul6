@@ -30,10 +30,9 @@ public class NewPost extends Fragment {
     DatabaseReference databaseFood;
 
     @Override
-    protected void onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_new_post, container, false);
-    }
 
     databaseFood = FirebaseDatabase.getInstance().getReference(MainActivity.table1);
 

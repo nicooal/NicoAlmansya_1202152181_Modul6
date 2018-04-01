@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Login extends AppCompatActivity {
 
-    private static final String TAG = "Authentication Email";
+    private static final String TAG = "Mail Authentication";
     TextInputLayout mEmail, mPassword;
     Button mDaftar, mMasuk;
 
@@ -32,6 +32,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         mAuth = FirebaseAuth.getInstance();
 
         mEmail = findViewById(R.id.t_email);
@@ -49,7 +50,7 @@ public class Login extends AppCompatActivity {
                 if (validateForm()) {
                     signIn(email, password);
                 } else {
-                    Toast.makeText(Login.this, "Please Fill the Form",
+                    Toast.makeText(Login.this, "Fill the Empty Form",
                             Toast.LENGTH_SHORT).show();
                 }
             }
@@ -65,7 +66,7 @@ public class Login extends AppCompatActivity {
                 if (validateForm()) {
                     createAccount(email, password);
                 } else {
-                    Toast.makeText(Login.this, "Please Fill the Form",
+                    Toast.makeText(Login.this, "Fill the Empty Form",
                             Toast.LENGTH_SHORT).show();
                 }
             }
@@ -96,7 +97,7 @@ public class Login extends AppCompatActivity {
                             Intent i = new Intent(Login.this, MainActivity.class);
                             startActivity(i);
                         } else {
-                            Toast.makeText(Login.this, "Authentication failed.",
+                            Toast.makeText(Login.this, "Authentication failed",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -116,7 +117,7 @@ public class Login extends AppCompatActivity {
                             startActivity(i);
                         } else {
 
-                            Toast.makeText(Login.this, "Akun Belum Terdaftar",
+                            Toast.makeText(Login.this, "Not Registered",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }

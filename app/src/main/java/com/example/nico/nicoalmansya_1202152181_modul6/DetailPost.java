@@ -20,8 +20,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.w3c.dom.Comment;
-
 import java.util.ArrayList;
 
 public class DetailPost extends AppCompatActivity {
@@ -80,7 +78,9 @@ public class DetailPost extends AppCompatActivity {
                 if (!TextUtils.isEmpty(textReview)) {
 
                     String id = databaseComments.push().getKey();
-                    Comment track = new Comment(id, user.getUsername(), textReview);
+                    long timestamp = System.currentTimeMillis();
+
+                    Comment track = new Comment(id, user.getUsername(), textReview,(0-timestamp));
                     databaseComments.child(id).setValue(track);
                     Toast.makeText(DetailPost.this, "Comment Sent", Toast.LENGTH_LONG).show();
                     et_comment.setText("");
