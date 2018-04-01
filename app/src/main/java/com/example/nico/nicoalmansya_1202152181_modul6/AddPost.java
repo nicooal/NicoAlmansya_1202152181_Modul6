@@ -32,7 +32,6 @@ public class AddPost extends AppCompatActivity {
     EditText mTitlePost, mPost;
     ImageView imageView;
     Button mChooseImage;
-    //our database reference object
     DatabaseReference databaseFood;
     FirebaseAuth mAuth;
 
@@ -115,7 +114,7 @@ public class AddPost extends AppCompatActivity {
                     startActivity(i);
                 } else {
                     //if the value is not given displaying a toast
-                    Toast.makeText(AddPost.this, "Please Fill the form and choose image", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddPost.this, "Fill the empty form and choose image", Toast.LENGTH_LONG).show();
                 }
             }
 

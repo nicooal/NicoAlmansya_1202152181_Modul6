@@ -26,7 +26,6 @@ public class NewPost extends Fragment {
     ProgressDialog mProgressDialog;
 
     private ArrayList<Post> listPosts;
-    //our database reference object
     DatabaseReference databaseFood;
 
     @Override
@@ -51,7 +50,7 @@ public class NewPost extends Fragment {
 
     @Override
     public void onStart() {
-        super.onStart(); //attaching value event listener
+        super.onStart();
         databaseFood.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

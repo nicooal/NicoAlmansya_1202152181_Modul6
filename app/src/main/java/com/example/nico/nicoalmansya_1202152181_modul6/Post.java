@@ -1,9 +1,5 @@
 package com.example.nico.nicoalmansya_1202152181_modul6;
 
-/**
- * Created by Nico on 02/04/2018.
- */
-
 public class Post {
     String id;
     private String userID;
@@ -13,6 +9,8 @@ public class Post {
     private String imagePost;
     public Long timestamp;
 
+    public Post() {
+    }
 
     public Post(String id, String userID, String username, String mImagePost, String titlePost, String post) {
         this.id = id;

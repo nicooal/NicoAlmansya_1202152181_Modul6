@@ -1,9 +1,5 @@
 package com.example.nico.nicoalmansya_1202152181_modul6;
 
-/**
- * Created by Nico on 02/04/2018.
- */
-
 public class Comment {
 
     String id;
@@ -11,6 +7,8 @@ public class Comment {
     String comment;
     Long timestamp;
 
+    public Comment() {
+    }
 
     public Comment(String id, String username, String comment, Long timestamp) {
         this.id=id;
